@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRO Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #f9f9f9;
+        }
+
+        .dashboard-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV57GAYpZKfPDzshwUysVkaQRR0h_K2gL9xXY6qubqkd1VWqmJY0IaU3o&s" alt="Logo">
+        <h1>Certificate Issuance Portal From Revenue Department</h1>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <h2>VRO Dashboard</h2>
+            <form>
+                <div class="form-group">
+                    <label for="certificate-type">Type Of Certificate</label>
+                    <select id="certificate-type" name="certificate-type">
+                        <option value="caste">Caste Certificate</option>
+                        <option value="income">Income Certificate</option>
+                        <option value="birth">Birth Certificate</option>
+                        <option value="death">Death Certificate</option>
+                    </select>
+                </div>
+
+                <a href="vroaddcert.html"><button type="button">Add Certificate</button></a>
+                <a href="vrocerti.html"><button type="button">Get Certificate Details</button></a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
