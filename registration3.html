@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     Certificate Issuance Registration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons button {
+            background-color: white;
+            color: #007bff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .header-buttons button:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Form Container */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 70px); /* Adjust for header height */
+            padding: 20px;
+        }
+
+        .registration-form {
+            background-color: #ffffff;
+            padding: 29px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        /* Form Fields */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .register-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-title">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV57GAYpZKfPDzshwUysVkaQRR0h_K2gL9xXY6qubqkd1VWqmJY0IaU3o&s" alt="Logo">
+            <span>Certificate Issuance Portal from Revenue Department</span>
+        </div>
+        <div class="header-buttons">
+            <a href="login2.html"> <button onclick="location.href='login.html'">Login</button></a>
+            <a href="home1.html"><button onclick="location.href='home.html'">Back</button></a>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form-container">
+        <form class="registration-form">
+            <h2>Register</h2>
+            <div class="form-group">
+            <label for="aadhaar">AADHAAR Number</label>
+            <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter your AADHAAR number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email ID" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No.</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+             <a href ="login2.html"><button type="submit" class="register-button">Register</button></a>
+        </form>
+    </div>
+</body>
+</html>

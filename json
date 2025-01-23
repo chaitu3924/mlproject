@@ -1,0 +1,10 @@
+{
+    "scenario_id": 1,
+    "title": "Ransomware Attack",
+    "description": "A ransomware attack has encrypted critical files on your system. What do you do first?",
+    "choices": [
+        { "text": "Pay the ransom", "outcome": "negative", "feedback": "Paying ransom encourages attackers." },
+        { "text": "Isolate the system", "outcome": "positive", "feedback": "Good step to prevent spread." },
+        { "text": "Ignore it", "outcome": "negative", "feedback": "Ignoring will worsen the situation." }
+    ]
+}
