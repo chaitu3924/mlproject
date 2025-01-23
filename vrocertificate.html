@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.civilserviceindia.com/images/Indian_Revenue_Service_Logo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #b19cd9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a187cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get Certificate History</h1>
+        <input type="text" placeholder="Certificate Number" id="certificateNumber">
+        <a href="vrohistory.html"><button onclick="getHistory()">Get History</button></a>
+    </div>
+
+    <script>
+        function getHistory() {
+            const certificateNumber = document.getElementById('certificateNumber').value;
+            if (certificateNumber) {
+                alert('Fetching history for certificate number: ${certificateNumber}');
+                // Add actual fetch or API logic here
+            } else {
+                alert('Please enter a certificate number.');
+            }
+        }
+    </script>
+</body>
+</html>
