@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        .container {
+            background: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2575fc;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+]           font-weight: bold;
+        }
+        input, select, button {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input:focus, select:focus {
+            border-color: #2575fc;
+            outline: none;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .buttons button {
+            width: 48%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .buttons button[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+        .buttons button[type="button"] {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add Certificate</h1>
+
+        <form action="#" method="POST">
+            <label for="aadhaar">Aadhaar Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar" required>
+
+            <label for="certificate-number">Certificate Number:</label>
+            <input type="text" id="certificate-number" name="certificate-number" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="certificate-type">Type of Certificate:</label>
+            <select id="certificate-type" name="certificate-type" required>
+                <option value="income">Income Certificate</option>
+                <option value="caste">Caste Certificate</option>
+                <option value="birth">Birth Certificate</option>
+                <option value="death">Death Certificate</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <div class="buttons">
+                <button type="submit">Approve</button>
+                <button type="button">Reject</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
