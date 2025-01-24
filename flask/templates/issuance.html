@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Issuance Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header .back-button {
+            background-color: white;
+            color: blue;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV57GAYpZKfPDzshwUysVkaQRR0h_K2gL9xXY6qubqkd1VWqmJY0IaU3o&s" alt="Logo">
+            <h1>Certificate Issuance Portal From Revenue Department</h1>
+        </div>
+       <a href="{{url_for('certificate')}}"> <button class="back-button">Back</button></a>
+    </header>
+
+    <main>
+        <form>
+            <div class="form-group">
+                <label for="identity-proof">Identity Proof</label>
+                <input type="file" id="identity-proof" name="identity-proof" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+                <label for="address-proof">Address Proof</label>
+                <input type="file" id="address-proof" name="address-proof" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+                <label for="income-proof">Income Proof</label>
+                <input type="file" id="income-proof" name="income-proof" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+                <label for="passport-photo">Recent Passport Size Photo</label>
+                <input type="file" id="passport-photo" name="passport-photo" accept=".pdf">
+            </div>
+
+            <a href="thank.html"><button type="submit" class="submit-button">Submit</button></a>
+        </form>
+    </main>
+</body>
+</html>
